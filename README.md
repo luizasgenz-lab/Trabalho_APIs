@@ -1,5 +1,3 @@
-# Trabalho_APIs
-
 # Trabalho de API REST
 
 Projeto de uma API RESTful desenvolvida em Node.js. Toda a implementação das rotas (CRUD) e conexão com o banco foi centralizada no arquivo `index.js`.
