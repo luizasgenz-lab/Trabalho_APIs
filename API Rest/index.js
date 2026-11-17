@@ -22,8 +22,7 @@ const conecta = knex( {
     }
 } )
 
-// --- CLIENTES ---
-
+// CLIENTES 
 // lista todos os clientes
 api.get('/clientes', (req, res, next) => {
     conecta('clientes')
@@ -45,8 +44,7 @@ api.post('/clientes', (req, res, next) => {
         .catch(next)
 })
 
-// --- PRODUTOS ---
-
+// PRODUTOS
 // lista os produtos
 api.get('/produtos', (req, res, next) => {
     conecta('produtos')
@@ -99,8 +97,7 @@ api.delete('/produtos/:id', (req, res, next) => {
         .catch(next);
 });
 
-// --- PEDIDOS ---
-
+//PEDIDOS 
 // lista os pedidos
 api.get('/pedidos', (req, res, next) => {
     conecta('pedidos')
@@ -138,7 +135,7 @@ api.post('/pedidos', (req, res, next) => {
         .catch(next)
 })
 
-// subindo o servidor
+// servidor
 api.listen( PORT , ()=>{
     console.log( `API rodando em http://${HOSTNAME}:${PORT}` )
 } )
