@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Desafio oAuth2</title>
+    <style>
+        body {
+            font-family:  Arial, sans-serif;
+            background-color: #f6f8fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 1px solid #e1e4e8;
+            width: 100%;
+            max-width: 350px;
+        }
+        h1 { color: #24292e; margin-top: 0; font-size: 24px; }
+        p { color: #586069; margin-bottom: 30px; }
+        .btn-github {
+            display: block;
+            background-color: #24292e;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+        .btn-github:hover { background-color: #0366d6; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Desafio oAuth2</h1>
+        <p>Aula 14 - UniSenac</p>
+        <!-- O teu Client ID já está direto aqui no link -->
+        <a href="https://github.com/login/oauth/authorize?client_id=Ov23li0g9NuajH1xDDcx" class="btn-github">
+            Fazer login com o GitHub
+        </a>
+    </div>
+</body>
+</html>
